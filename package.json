@@ -9,6 +9,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "start": "node .",
+    "create-db": "node ./server/migrations/clear.js && node ./bin/automigrate.js",
+    "update-db": "UPDATE=true node ./bin/automigrate.js",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
