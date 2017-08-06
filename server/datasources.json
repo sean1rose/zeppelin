@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "zeppelin",
+    "password": "",
+    "name": "db",
+    "user": "seanrose",
+    "connector": "postgresql"
+  }
+}
