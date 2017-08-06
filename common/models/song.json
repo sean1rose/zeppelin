@@ -6,14 +6,25 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "songs": {
+      "type": "hasMany",
+      "model": "song",
+      "foreignKey": ""
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    },
     "name": {
-      "type": "string",
-      "required": true
+      "type": "belongsTo",
+      "model": "songName",
+      "foreignKey": ""
     }
   },
-  "validations": [],
-  "relations": {},
   "acls": [],
   "methods": {}
 }

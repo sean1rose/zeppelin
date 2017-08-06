@@ -1,7 +1,7 @@
 {
-  "name": "user",
-  "plural": "users",
-  "base": "User",
+  "name": "songName",
+  "plural": "songNames",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -14,9 +14,9 @@
   },
   "validations": [],
   "relations": {
-    "lists": {
+    "songs": {
       "type": "hasMany",
-      "model": "list",
+      "model": "song",
       "foreignKey": ""
     }
   },

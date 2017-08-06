@@ -13,8 +13,12 @@
       "./mixins"
     ]
   },
-  "User": {
-    "dataSource": "db"
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
   },
   "AccessToken": {
     "dataSource": "db",
@@ -23,13 +27,6 @@
   "ACL": {
     "dataSource": "db",
     "public": false
-  },
-  "RoleMapping": {
-    "dataSource": "db",
-    "public": false,
-    "options": {
-      "strictObjectIDCoercion": true
-    }
   },
   "Role": {
     "dataSource": "db",
@@ -44,6 +41,14 @@
     "public": true
   },
   "song": {
+    "dataSource": "db",
+    "public": true
+  },
+  "listName": {
+    "dataSource": "db",
+    "public": true
+  },
+  "songName": {
     "dataSource": "db",
     "public": true
   }
